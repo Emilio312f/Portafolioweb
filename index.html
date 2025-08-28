@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal || Emilio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">Portafolio Personal.</a>
+        <ul>
+            <li class="active"><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Portafolio"> Portafolio</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#Estadisticas">Estadísticas</a></li>
+            <li><a href="#Testimonios">Testimonios</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li class="contact-button">
+                <a href="#Contacto" class="nav-contact-btn">Contáctame <i class="fas fa-paper-plane"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+    
+    <section id="Inicio" class="Inicio">
+        <div class="Inicio-info">
+            <div class="content">
+                <h1 class="animated-text">Hola, soy <span>Emilio</span></h1>
+                <h2 class="animated-text">Desarrollador Web</h2>
+                <p class="animated-text">Apasionado por crear experiencias digitales atractivas y funcionales. Especializado en desarrollo frontend con experiencia en tecnologías modernas.</p>
+                <a href="Cv Emilio Ramirez Noriega.pdf" class="btn" download><span>Descargar Cv</span></a>
+                <div class="sci">
+                    <a href="https://github.com/Emilio312f?tab=overview&from=2025-03-01&to=2025-03-15" target="_blank" style="--i:1"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/emilio-ramirez-noriega-76939b333/" target="_blank" style="--i:2"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/im_emilior/" target="_blank" style="--i:3"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100025069325662" target="_blank" style="--i:4"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="img-item">
+                    <img src="img/inicio.jfif" alt="Emilio Ramirez">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Portafolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Mi Portafolio</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Explora mis proyectos más recientes</p>
+            
+            <div class="portfolio-toolbar" data-aos="fade-up" data-aos-delay="150" role="tablist" aria-label="Filtrar proyectos">
+                <button class="pill active" data-portfolio-filter="all" role="tab" aria-selected="true">Todos</button>
+                <button class="pill" data-portfolio-filter="web" role="tab">Web</button>
+                <button class="pill" data-portfolio-filter="app" role="tab">Apps</button>
+                <button class="pill" data-portfolio-filter="design" role="tab">Diseño</button>
+            </div>
+            
+            <div class="portfolio-items">
+                <div class="portfolio-item" data-category="web" style="--delay: 0.2s;" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="img/Proyecto1.jpeg" alt="Proyecto 1">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Landing Page</h3>
+                        <p>Creación de una landing page moderna y responsive usando Sass, Bootstrap y JavaScript.</p>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                                <span><i class="fas fa-user"></i> Personal</span>
+                            </div>
+                            <ul class="tech-list static">
+                                <li>Sass</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app" style="--delay: 0.4s;" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-container">
+                        <img src="img/Proyecto2.jpeg" alt="Proyecto 2">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce</h3>
+                        <p>Creación de un E-commerce completo con carrito de compras, gestión de usuarios y pasarela de pagos.</p>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                                <span><i class="fas fa-user"></i> Cliente</span>
+                            </div>
+                            <ul class="tech-list static">
+                                <li>React.js</li>
+                                <li>Tailwind</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web" style="--delay: 0.6s;" data-aos="fade-up" data-aos-delay="400">
+                    <div class="image-container">
+                        <img src="img/Proyecto3.jpeg" alt="Proyecto 3">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>CRUD con Base de Datos</h3>
+                        <p>Sistema de gestión de clientes con operaciones CRUD completas conectado a SQL Server.</p>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <span><i class="fas fa-calendar"></i> 2022</span>
+                                <span><i class="fas fa-user"></i> Empresa</span>
+                            </div>
+                            <ul class="tech-list static">
+                                <li>PHP</li>
+                                <li>Vue.JS</li>
+                                <li>Tailwind</li>
+                                <li>SQL Server</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design" style="--delay: 0.8s;" data-aos="fade-up" data-aos-delay="500">
+                    <div class="image-container">
+                        <img src="img/diseño de marca.jpg" alt="Proyecto 4">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Diseño de Marca</h3>
+                        <p>Creación de identidad visual completa incluyendo logo, paleta de colores y materiales promocionales.</p>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                                <span><i class="fas fa-user"></i> Cliente</span>
+                            </div>
+                            <ul class="tech-list static">
+                                <li>Illustrator</li>
+                                <li>Photoshop</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta" data-aos="fade-up" data-aos-delay="600">
+                <a href="#Contacto" class="btn">¿Tienes un proyecto en mente? <span>Contáctame</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section alt" aria-label="Habilidades"> 
+       <div class="container"> 
+         <h2 class="section-title" data-aos="fade-up">Habilidades</h2> 
+         <div class="skills-toolbar" data-aos="fade-up" data-aos-delay="80" role="tablist" aria-label="Filtrar habilidades"> 
+           <button class="pill active" data-skill-filter="all" role="tab" aria-selected="true">Todas</button> 
+           <button class="pill" data-skill-filter="frontend" role="tab">Frontend</button> 
+           <button class="pill" data-skill-filter="backend" role="tab">Backend</button> 
+           <button class="pill" data-skill-filter="otros" role="tab">Otros</button> 
+         </div> 
+         <div class="skills-grid"> 
+           <!-- Frontend Skills -->
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="50"> 
+             <i class="fa-brands fa-html5 skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>HTML5</h3> 
+               <span class="badge level-high">Avanzado</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de HTML" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"> 
+               <span style="--value:90%"><em>90%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="80"> 
+             <i class="fa-brands fa-css3-alt skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>CSS3</h3> 
+               <span class="badge level-high">Avanzado</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"> 
+               <span style="--value:85%"><em>85%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="110"> 
+             <i class="fa-brands fa-sass skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>SASS</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de SASS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"> 
+               <span style="--value:75%"><em>75%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="140"> 
+             <i class="fa-brands fa-square-js skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>JavaScript</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"> 
+               <span style="--value:80%"><em>80%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="170"> 
+             <i class="fa-solid fa-code skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>TypeScript</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de TypeScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"> 
+               <span style="--value:70%"><em>70%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="200"> 
+             <i class="fa-brands fa-react skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>React</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de React" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"> 
+               <span style="--value:75%"><em>75%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="230"> 
+             <i class="fa-solid fa-wind skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Tailwind CSS</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Tailwind" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"> 
+               <span style="--value:70%"><em>70%</em></span> 
+             </div> 
+           </article> 
+           <article class="skill-card" data-category="frontend" data-aos="zoom-in" data-aos-delay="260"> 
+             <i class="fa-brands fa-bootstrap skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Bootstrap</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Bootstrap" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"> 
+               <span style="--value:70%"><em>70%</em></span> 
+             </div> 
+           </article>
+           
+           <!-- Backend Skills -->
+           <article class="skill-card" data-category="backend" data-aos="zoom-in" data-aos-delay="290"> 
+             <i class="fa-brands fa-node-js skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Node.js</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Node.js" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"> 
+               <span style="--value:65%"><em>65%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="backend" data-aos="zoom-in" data-aos-delay="320"> 
+             <i class="fa-solid fa-database skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>MongoDB</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de MongoDB" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"> 
+               <span style="--value:60%"><em>60%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="backend" data-aos="zoom-in" data-aos-delay="350"> 
+             <i class="fa-solid fa-database skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>SQL</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de SQL" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"> 
+               <span style="--value:65%"><em>65%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="backend" data-aos="zoom-in" data-aos-delay="380"> 
+             <i class="fa-brands fa-php skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>PHP</h3> 
+               <span class="badge level-low">Básico</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de PHP" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"> 
+               <span style="--value:50%"><em>50%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="backend" data-aos="zoom-in" data-aos-delay="410"> 
+             <i class="fa-brands fa-laravel skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Laravel</h3> 
+               <span class="badge level-low">Básico</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Laravel" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45"> 
+               <span style="--value:45%"><em>45%</em></span> 
+             </div> 
+           </article>
+           
+           <!-- Otros Skills -->
+           <article class="skill-card" data-category="otros" data-aos="zoom-in" data-aos-delay="440"> 
+             <i class="fa-brands fa-github skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>GitHub</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de GitHub" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"> 
+               <span style="--value:75%"><em>75%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="otros" data-aos="zoom-in" data-aos-delay="470"> 
+             <i class="fa-brands fa-figma skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Figma</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Figma" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"> 
+               <span style="--value:70%"><em>70%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="otros" data-aos="zoom-in" data-aos-delay="500"> 
+             <i class="fa-solid fa-code-branch skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Git</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Git" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"> 
+               <span style="--value:70%"><em>70%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="otros" data-aos="zoom-in" data-aos-delay="530"> 
+             <i class="fa-solid fa-code skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>VS Code</h3> 
+               <span class="badge level-high">Avanzado</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de VS Code" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"> 
+               <span style="--value:85%"><em>85%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="otros" data-aos="zoom-in" data-aos-delay="560"> 
+             <i class="fa-brands fa-windows skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>Windows</h3> 
+               <span class="badge level-high">Avanzado</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de Windows" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"> 
+               <span style="--value:90%"><em>90%</em></span> 
+             </div> 
+           </article>
+           <article class="skill-card" data-category="otros" data-aos="zoom-in" data-aos-delay="590"> 
+             <i class="fa-solid fa-terminal skill-icon" aria-hidden="true"></i> 
+             <div class="skill-head"> 
+               <h3>NPM</h3> 
+               <span class="badge level-mid">Intermedio</span> 
+             </div> 
+             <div class="progress" aria-label="Nivel de NPM" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"> 
+               <span style="--value:70%"><em>70%</em></span> 
+             </div> 
+           </article>
+         </div>
+       </div>
+    </section>
+
+    <section id="Servicios" class="services">
+        <h2>Mis Servicios</h2>
+        <div class="services-items">
+            <div class="service-item" style="--delay: 0.2s;">
+                <i class='bx bx-code-alt'></i>
+                <h3>Desarrollo Frontend</h3>
+                <p>Creación de interfaces web modernas, interactivas y responsivas con React, TypeScript y Tailwind CSS.</p>
+            </div>
+            <div class="service-item" style="--delay: 0.4s;">
+                <i class='bx bx-server'></i>
+                <h3>Desarrollo Backend</h3>
+                <p>Implementación de APIs y servicios web con Node.js, MongoDB y SQL para aplicaciones escalables.</p>
+            </div>
+            <div class="service-item" style="--delay: 0.6s;">
+                <i class='bx bx-paint'></i>
+                <h3>Diseño UX/UI</h3>
+                <p>Diseño de experiencias de usuario intuitivas y visualmente atractivas utilizando Figma.</p>
+            </div>
+            <div class="service-item" style="--delay: 0.8s;">
+                <i class='bx bx-globe'></i>
+                <h3>Desarrollo Web Full Stack</h3>
+                <p>Creación de aplicaciones web completas desde el frontend hasta el backend, con enfoque en soluciones digitales impactantes.</p>
+            </div>
+            <div class="service-item" style="--delay: 1s;">
+                <i class='bx bx-devices'></i>
+                <h3>Diseño Responsivo</h3>
+                <p>Desarrollo de sitios web que se adaptan perfectamente a todos los dispositivos y tamaños de pantalla.</p>
+            </div>
+            <div class="service-item" style="--delay: 1.2s;">
+                <i class='bx bx-git-branch'></i>
+                <h3>Control de Versiones y Colaboración</h3>
+                <p>Gestión eficiente de proyectos con Git y GitHub, facilitando el trabajo en equipo y el seguimiento de cambios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Estadisticas" class="Estadisticas">
+        <h2 class="heading">Estadísticas</h2>
+        <p class="section-subtitle">Mi progreso en desarrollo web</p>
+        
+        <div class="stats-container">
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                <i class='bx bx-code-block'></i>
+                <div class="counter" data-target="15">0</div>
+                <h3>Proyectos en GitHub</h3>
+            </div>
+            
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                <i class='bx bx-code-curly'></i>
+                <div class="counter" data-target="20">0</div>
+                <h3>Tecnologías Aprendidas</h3>
+            </div>
+            
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                <i class='bx bx-time-five'></i>
+                <div class="counter" data-target="2">0</div>
+                <h3>Años Aprendiendo</h3>
+            </div>
+            
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                <i class='bx bx-git-branch'></i>
+                <div class="counter" data-target="150">0</div>
+                <h3>Commits Realizados</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Testimonios" class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-content">
+                        <p>"Emilio creó un sitio web excepcional para mi negocio. Su atención al detalle y creatividad transformaron mi visión en una realidad digital impresionante."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Mendoza</h4>
+                            <p>CEO, TechSolutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>"Trabajar con Emilio fue una experiencia increíble. Su conocimiento técnico y capacidad para entender nuestras necesidades resultaron en un producto que superó nuestras expectativas."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Laura Sánchez</h4>
+                            <p>Directora de Marketing, InnovaDigital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <p>"El rediseño de nuestra plataforma por Emilio aumentó significativamente la retención de usuarios y mejoró la experiencia general. Su enfoque en UX/UI es excepcional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Miguel Torres</h4>
+                            <p>Fundador, AppDevelopers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <p>"Emilio no solo entregó un producto de alta calidad, sino que también nos educó durante todo el proceso. Su profesionalismo y dedicación son admirables."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Ana Gutiérrez</h4>
+                            <p>Gerente de Proyectos, CreativeStudio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-controls">
+                <button class="testimonial-arrow prev" aria-label="Testimonio anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-dots"></div>
+                <button class="testimonial-arrow next" aria-label="Testimonio siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contacto" class="contact">
+        <h2>Contáctame</h2>
+        <div class="contact-info">
+            <div class="contact-item" style="--delay: 0.2s;">
+                <i class='bx bx-envelope'></i>
+                <p><strong>Email:</strong> emilio.ramirezn21@gmail.com</p>
+            </div>
+            <div class="contact-item" style="--delay: 0.4s;">
+                <i class='bx bx-phone'></i>
+                <p><strong>Teléfono:</strong> +51 941 968 542</p>
+            </div>
+            <div class="contact-item" style="--delay: 0.6s;">
+                <i class='bx bx-map'></i>
+                <p><strong>Ubicación:</strong> Trujillo, Perú</p>
+            </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Tu Nombre Completo" required style="--delay: 0.8s;">
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required style="--delay: 1.0s;">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Tu Número de Teléfono (ej. +51987654321)" required style="--delay: 1.2s;">
+                <input type="text" name="subject" placeholder="Asunto" required style="--delay: 1.4s;">
+            </div>
+            <div class="form-group">
+                <select name="type" required style="--delay: 1.6s;">
+                    <option value="" disabled selected>Selecciona el tipo de consulta</option>
+                    <option value="Oportunidad de Trabajo">Oportunidad de Trabajo</option>
+                    <option value="Consultoría">Consultoría</option>
+                    <option value="Colaboración">Colaboración</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group full-width">
+                <textarea name="message" placeholder="Tu Mensaje" required style="--delay: 1.8s;"></textarea>
+            </div>
+            <button type="submit" class="btn" style="--delay: 2.0s;">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="bx bx-check-circle notification-icon"></i>
+            <p id="notification-message">¡Mensaje enviado con éxito! Te contactaré pronto.</p>
+            <button class="notification-close" id="notification-close"><i class="bx bx-x"></i></button>
+        </div>
+    </div>
+</body>
+</html>

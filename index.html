@@ -22,106 +22,110 @@
 </head>
 <body>
     
-            <div class="skills-layout">
-                <aside class="profile-card">
-                    <div class="profile-avatar">
-                        <img src="img/inicio.jfif" alt="Retrato de Emilio Ramirez">
-                        <span class="status-badge"><span class="status-dot"></span>Disponible para freelance</span>
-                    </div>
-                    <div class="profile-info">
-                        <h3>Emilio Ramirez</h3>
-                        <p class="profile-handle">@Emilio312f</p>
-                        <p class="profile-summary">Desarrollador Web Full Stack obsesionado con las experiencias elegantes y escalables.</p>
-                    </div>
-                    <ul class="profile-details">
-                        <li><i class='bx bx-code-alt'></i><span>Frontend & Backend · Arquitecturas modernas</span></li>
-                        <li><i class='bx bx-rocket'></i><span>Aprendiendo frameworks de última generación cada día</span></li>
-                        <li><i class='bx bx-target-lock'></i><span>Meta: crear soluciones digitales medibles e impactantes</span></li>
-                    </ul>
-                    <div class="profile-achievements">
-                        <small>Logros recientes</small>
-                        <strong>+10 proyectos · AWS Solutions Architect</strong>
-                    </div>
-                    <div class="profile-links">
-                        <a href="https://github.com/Emilio312f" target="_blank" rel="noopener" class="profile-link">
-                            <i class='bx bxl-github'></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/emilio312f" target="_blank" rel="noopener" class="profile-link">
-                            <i class='bx bxl-linkedin'></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="mailto:emilio312f@gmail.com" class="profile-link">
-                            <i class='bx bxl-gmail'></i>
-                            <span>Gmail</span>
-                        </a>
-                    </div>
-                </aside>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line"></div>
+            <div class="loader-text">Cargando</div>
+        </div>
+    </div>
 
-                <div class="stack-card">
-                    <div class="stack-header">
-                        <span class="stack-eyebrow">⚡ Tech Stack</span>
-                        <h3>Herramientas con las que construyo productos memorables</h3>
-                        <p>Actualmente profundizando en ecosistemas con TypeScript, automatizando despliegues y refinando patrones de diseño orientados a componentes.</p>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Dev</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                    <a href="#habilidades" class="nav-link">Habilidades</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+                
+                <div class="nav-social">
+                    <a href="https://github.com/Emilio312f" target="_blank" class="social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/emilio-ramirez-noriega-76939b333/" target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="CV RAMIREZ NORIEGA EMILIO.pdf" target="_blank" class="btn-cv">
+                        <i class='bx bx-download'></i>
+                        <span>CV</span>
+                    </a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label" data-scroll>
+                    <span class="label-dot"></span>
+                    <span>Disponible para freelance</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-small">Hola, soy</span>
+                    <span class="title-name">
+                        <span class="typewriter" id="nameTypewriter">Emilio Miguel Ramirez Noreiga</span>
+                        <span class="cursor-blink">|</span>
+                    </span>
+                    <span class="title-main gradient-text">Desarrollador Full Stack</span>
+                    <span class="title-description">
+                        <span class="rotating-text" id="rotatingText"></span>
+                        <span class="cursor-blink">|</span>
+                    </span>
+                </h1>
+                
+                <p class="hero-description" data-scroll>
+                    Creo experiencias digitales que combinan diseño excepcional con código limpio. 
+                    Especializado en desarrollo web moderno y arquitectura escalable.
+                </p>
+                
+                <div class="hero-buttons" data-scroll>
+                    <a href="#contacto" class="btn btn-primary">
+                        <span>Iniciar proyecto</span>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <a href="#proyectos" class="btn btn-ghost">
+                        <span>Ver trabajos</span>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Proyectos completados</div>
                     </div>
-
-                    <div class="stack-groups">
-                        <div class="stack-group">
-                            <div class="group-heading">
-                                <span>Front-end</span>
-                                <small>UI, performance y accesibilidad</small>
-                            </div>
-                            <div class="badge-grid">
-                                <span class="stack-badge html">HTML5</span>
-                                <span class="stack-badge css">CSS3</span>
-                                <span class="stack-badge sass">Sass</span>
-                                <span class="stack-badge js">JavaScript</span>
-                                <span class="stack-badge ts">TypeScript</span>
-                                <span class="stack-badge react">React</span>
-                                <span class="stack-badge tailwind">Tailwind CSS</span>
-                                <span class="stack-badge bootstrap">Bootstrap</span>
-                            </div>
-                        </div>
-
-                        <div class="stack-group">
-                            <div class="group-heading">
-                                <span>Back-end</span>
-                                <small>APIs, bases de datos y seguridad</small>
-                            </div>
-                            <div class="badge-grid">
-                                <span class="stack-badge node">Node.js</span>
-                                <span class="stack-badge mongo">MongoDB</span>
-                                <span class="stack-badge sql">SQL</span>
-                                <span class="stack-badge php">PHP</span>
-                                <span class="stack-badge laravel">Laravel</span>
-                            </div>
-                        </div>
-
-                        <div class="stack-group">
-                            <div class="group-heading">
-                                <span>Otras herramientas</span>
-                                <small>Diseño, colaboración y entorno</small>
-                            </div>
-                            <div class="badge-grid">
-                                <span class="stack-badge figma">Figma</span>
-                                <span class="stack-badge git">Git</span>
-                                <span class="stack-badge npm">npm</span>
-                                <span class="stack-badge vscode">VS Code</span>
-                                <span class="stack-badge windows">Windows</span>
-                            </div>
-                        </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Clientes satisfechos</div>
                     </div>
-
-                    <div class="stack-contact">
-                        <span>Conéctate conmigo:</span>
-                        <div class="stack-contact-links">
-                            <a href="https://github.com/Emilio312f" target="_blank" rel="noopener">GitHub</a>
-                            <a href="https://www.linkedin.com/in/emilio312f" target="_blank" rel="noopener">LinkedIn</a>
-                            <a href="mailto:emilio312f@gmail.com">Gmail</a>
-                        </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Años de experiencia</div>
                     </div>
                 </div>
             </div>
+            
+            <div class="hero-visual">
+                <div class="code-window" data-scroll>
                     <div class="window-header">
                         <div class="window-dots">
                             <span></span>
@@ -488,9 +492,9 @@
                 <div class="contact-info">
                     <div class="section-header">
                         <span class="section-number">03</span>
-                        <h2 class="section-title">Trabajemos Juntos</h2>
+                        <h2 class="section-title">Hablemos</h2>
                         <p class="section-description">
-                            ¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte a hacerlo realidad.
+                            ¿Tienes un proyecto en mente? Contáctame.
                         </p>
                     </div>
                     
@@ -501,7 +505,7 @@
                             </div>
                             <div class="detail-content">
                                 <span class="detail-label">Email</span>
-                                <a href="mailto:hola@ejemplo.com" class="detail-value">hola@ejemplo.com</a>
+                                <a href="mailto:emilioramireznoriega.1@gmail.com" class="detail-value">emilioramireznoriega.1@gmail.com</a>
                             </div>
                         </div>
                         
@@ -511,60 +515,36 @@
                             </div>
                             <div class="detail-content">
                                 <span class="detail-label">Ubicación</span>
-                                <span class="detail-value">México, CDMX</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-card">
-                            <div class="detail-icon">
-                                <i class='bx bx-time'></i>
-                            </div>
-                            <div class="detail-content">
-                                <span class="detail-label">Horario</span>
-                                <span class="detail-value">Lun - Vie, 9:00 - 18:00</span>
+                                <span class="detail-value">Trujillo, Perú</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="https://github.com/Emilio312f" target="_blank" rel="noopener" class="social-link">
                             <i class='bx bxl-github'></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="https://www.linkedin.com/in/emilio-ramirez-noriega-76939b333/" target="_blank" rel="noopener" class="social-link">
                             <i class='bx bxl-linkedin'></i>
                             <span>LinkedIn</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class='bx bxl-twitter'></i>
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class='bx bxl-dribbble'></i>
-                            <span>Dribbble</span>
                         </a>
                     </div>
                 </div>
                 
                 <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="nombre" required>
-                            <label for="nombre">Nombre completo</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" required>
-                            <label for="email">Email</label>
-                        </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="nombre">Nombre</label>
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" id="asunto" required>
-                        <label for="asunto">Asunto</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
                     </div>
                     
                     <div class="form-group">
-                        <textarea id="mensaje" rows="5" required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                         <label for="mensaje">Mensaje</label>
                     </div>
                     
